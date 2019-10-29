@@ -19,17 +19,15 @@ Print out that many copies of the previous message on separate lines.
 
 def getName():
     print("What's your name man?\n")
-    input("Please tell me now!")
-
-
-
-
-
+    name = input("Please tell me now!")
+    return name
 
 def getAge():
+    age = input("What's your age man?")
+    return age
 
 def when100():
-
+    getAge()
 
 
 
