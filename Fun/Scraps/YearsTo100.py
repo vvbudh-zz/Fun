@@ -26,11 +26,12 @@ def getAge():
     age = input("What's your age man?")
     return age
 
-def when100():
-    getAge()
+def when100(age):
+    till100 = (100 - age)
+    print(till100)
 
 
-
+when100(int(getAge()))
 
 
 
