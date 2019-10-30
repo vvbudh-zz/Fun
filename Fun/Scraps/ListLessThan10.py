@@ -21,3 +21,5 @@ for x in range(0, len(a)):
         smaller.append(a[x])
 print(bigger)
 print(smaller)
+
+
