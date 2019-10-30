@@ -11,3 +11,13 @@ Write this in one line of Python.
 Ask the user for a number and return a list that contains only elements from the original
 list a that are smaller than that number given by the user."""
 
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+bigger = []
+smaller = []
+for x in range(0, len(a)):
+    if a[x] > 5:
+        bigger.append(a[x])
+    else:
+        smaller.append(a[x])
+print(bigger)
+print(smaller)
