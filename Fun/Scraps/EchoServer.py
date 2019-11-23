@@ -14,5 +14,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as listenSocket:
             data = int(outsideConnection.recv(1024))
             if not data:
                 break
-            outsideConnection.sendall(data)
+            data = data + 5
+            outsideConnection.send(bytes(data))
+            #outsideConnection.sendall(data)#send the data back to the client
             print(data)
