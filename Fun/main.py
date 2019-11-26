@@ -34,6 +34,8 @@ class Knife:
 
 
 
-vvKnife = Knife("vv", "Average", 30, "1d6")
+#vvKnife = Knife("vv", "Average", 30, "1d6")
 
 #vv = Player(100, vvKnife)'''
+
+
