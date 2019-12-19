@@ -1,0 +1,13 @@
+'''Write a Python program to reverse the digits of a
+given number and add it to the original, If the sum is not a palindrome
+repeat this procedure. <a href="#EDITOR">Go to the editor</a><br>
+Note: A palindrome is a word, number, or other sequence of characters
+which reads the same backward as forward, such as madam or racecar.<br>'''
+
+
+inputNumbers = input("Give me some numbers.")
+#1234
+list(inputNumbers)
+print(inputNumbers)
+#inputNumbers[len(inputNumbers)] = inputNumbers[len(inputNumbers)+1]
+#print(inputNumbers[len(inputNumbers)])

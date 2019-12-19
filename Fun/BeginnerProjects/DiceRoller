@@ -1,0 +1,42 @@
+'''1. Dice Rolling Simulator
+
+The Goal: Like the title suggests, this project involves writing a program
+that simulates rolling dice. When the program runs, it will randomly choose
+a number between 1 and 6. (Or whatever other integer you prefer — the number
+of sides on the die is up to you.) The program will print what that number is.
+It should then ask you if you’d like to roll again. For this project, you’ll
+need to set the min and max number that your dice can produce. For the average
+die, that means a minimum of 1 and a maximum of 6. You’ll also want a function
+that randomly grabs a number within that range and prints it.
+Concepts to keep in mind:
+
+Random
+Integer
+Print
+While Loops'''
+
+
+
+import random
+
+
+def makeRand():
+    '''This is the function to make the random numbers pop up when asked.'''
+    cont = 1#This is the variable for the while loop
+    while (cont == 1):
+        print ("Welcome!")
+        userInput = input("Press 1 to get a random number")
+        #user input is whether they want to get a number or not.
+        rand = random.randint(1, 6) #genny the number
+        print (rand)
+        contInput = input("Do you want to continue? 1 for yes 0 for no.")
+        #This asks the user if they want to continue or not.
+        #I had problems directly converting cont to the user input
+        #therefore I used an if statement to compare the user input to the
+        #condition and then setting it to the actual variable.
+        if (contInput == 1):
+            cont = 1
+        else:
+            cont = 0
+
+makeRand()
