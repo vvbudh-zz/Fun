@@ -7,7 +7,48 @@ which reads the same backward as forward, such as madam or racecar.<br>'''
 
 inputNumbers = input("Give me some numbers.")
 #1234
-list(inputNumbers)
-print(inputNumbers)
+list2 = list(inputNumbers)
+#for(i > != len(inputNumbers))
+#for i in range(-len(list2), i)
+#Just use a while, this isn't working.
+i = 0#While loop controller
+x = len(list2) - 1 #print backwards through the list
+reverseNum = []
+#While i is less than the length of list 2 print list2 backwards.
+while i < len(list2):
+    #print(list2[x])
+    reverseNum.append(list2[x])
+    #final = list(inputNumbers) + reverseNum
+    #This isn't what I want.
+
+    #These are the incriment variables.
+    x -= 1
+    i += 1
 #inputNumbers[len(inputNumbers)] = inputNumbers[len(inputNumbers)+1]
 #print(inputNumbers[len(inputNumbers)])
+
+
+#Make a function that will take any list and turn it into an int.
+def listToInt(inputList):
+    while j < len(inputList)
+    #tempj = inputList[j]
+
+    #how to make it make as many variables as it needs.
+
+#final =map(int, reverseNum)
+#Didn't work.
+
+#final = list(inputNumbers) + reverseNum
+#Doesn't work either.
+print(final)
+
+
+
+
+
+
+
+
+
+
+
