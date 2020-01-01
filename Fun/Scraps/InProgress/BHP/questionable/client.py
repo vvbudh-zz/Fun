@@ -5,7 +5,7 @@ the server must add these pieces of data up and then return the data.'''
 import random as rand
 import socket
 #Target Host and Target Port
-th01 = "www.example.com"
+th01 = "127.0.0.1"
 tp01 = 2221
 tp02 = 2222
 tp03 = 2223
@@ -18,12 +18,20 @@ socket03 = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
 
 #Connect the client to the server.
-socket01.connect(th01, tp01)
-socket02.connect(th01, tp02)
-socket03.connect(th01, tp03)
+socket01.connect((th01, tp01))
+socket02.connect((th01, tp02))
+socket03.connect((th01, tp03))
 
+
+
+#make the data to send.
+a = bytes(1)
+b = bytes(2)
+c = bytes(3)
 
 #send some data.
-socket01.send((rand.randint)).encode('utf-8')
-socket02.send((rand.randint)).encode('utf-8')
-socket03.send((rand.randint)).encode('utf-8')
+socket01.send((a))
+socket02.send((b))
+socket03.send((c))
+
+

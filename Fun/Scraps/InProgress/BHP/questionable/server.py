@@ -1,6 +1,6 @@
 #Take in three sockets worth of data and add them and pass them back.
 import socket
-
+import threading
 
 
 bind_ip = "127.0.0.1"
@@ -26,8 +26,8 @@ lSocket03.listen(5)
 
 print ("Listening on %s:%d " % (bind_ip,bp01), "-3")
 
-def handle_client(lSock01, lSock02, lSock03):
-
+'''def handle_client(lSock01, lSock02, lSock03):
+    """This is supposed to handle all three sockets at the same time."""
     #print out what the client sent us.
     int1 = lSock01.recv()
     int2 = lSock02.recv()
@@ -45,7 +45,7 @@ def handle_client(lSock01, lSock02, lSock03):
     #close the connections.
     lSock01.close()
     lSock01.close()
-    lSock01.close()
+    lSock01.close()'''
 
 
 while True:
