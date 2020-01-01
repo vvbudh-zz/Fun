@@ -9,14 +9,14 @@ bp02 = 2222
 bp03 = 2223
 
 #Making the sockets
-lSocket01 = socket.socket(AF.INET, socket.SOCK_STREAM)
-lSocket02 = socket.socket(AF.INET, socket.SOCK_STREAM)
-lSocket03 = socket.socket(AF.INET, socket.SOCK_STREAM)
+lSocket01 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+lSocket02 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+lSocket03 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 #this sets them to the ports they need to be set at.
-lSocket01.bind(bind_ip,bp01)
-lSocket02.bind(bind_ip,bp02)
-lSocket03.bind(bind_ip,bp03)
+lSocket01.bind((bind_ip,bp01))
+lSocket02.bind((bind_ip,bp02))
+lSocket03.bind((bind_ip,bp03))
 
 #this does what it says.
 lSocket01.listen(5)
@@ -24,7 +24,7 @@ lSocket02.listen(5)
 lSocket03.listen(5)
 
 
-print ("Listening on %q:%w " % (bind_ip,bp01), "-3")
+print ("Listening on %s:%d " % (bind_ip,bp01), "-3")
 
 def handle_client(lSock01, lSock02, lSock03):
 
@@ -49,8 +49,8 @@ def handle_client(lSock01, lSock02, lSock03):
 
 
 while True:
-    client,addr = server.accept()
-    print("[*] Accepted connection from: %q:%w" % (addr[0], addr[1]))
+    client,addr = lSocket01.accept()
+    print("[*] Accepted connection from: %s:%d" % (addr[0], addr[1]))
 
     #spin up client thread to handle incoming data?
     #What do you mean spin up? IT's a socket. It opens. Dumbass lol jk
