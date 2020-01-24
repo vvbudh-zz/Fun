@@ -30,17 +30,17 @@ while i < len(list2):
 
 #Make a function that will take any list and turn it into an int.
 def listToInt(inputList):
-    while j < len(inputList)
-    #tempj = inputList[j]
+    while j < len(inputList):
+        #tempj = inputList[j]
 
-    #how to make it make as many variables as it needs.
+        #how to make it make as many variables as it needs.
 
-#final =map(int, reverseNum)
-#Didn't work.
+        #final =map(int, reverseNum)
+        #Didn't work.
 
-#final = list(inputNumbers) + reverseNum
-#Doesn't work either.
-print(final)
+        final = list(inputNumbers) + reverseNum
+        #Doesn't work either.
+        print(final)
 
 
 

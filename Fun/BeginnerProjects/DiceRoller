@@ -29,14 +29,14 @@ def makeRand():
         #user input is whether they want to get a number or not.
         rand = random.randint(1, 6) #genny the number
         print (rand)
-        contInput = input("Do you want to continue? 1 for yes 0 for no.")
+        contInput = input("Do you want to continue? 1 for yes 0 for no.\n")
         #This asks the user if they want to continue or not.
         #I had problems directly converting cont to the user input
         #therefore I used an if statement to compare the user input to the
         #condition and then setting it to the actual variable.
-        if (contInput == 1):
-            cont = 1
-        else:
+        if (contInput == 0):
             cont = 0
+        else:
+            cont = 1
 
 makeRand()

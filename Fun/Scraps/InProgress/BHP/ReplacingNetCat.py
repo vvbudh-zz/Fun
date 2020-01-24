@@ -143,7 +143,7 @@ def server_loop():
         client_thread - threading.Thread(target = client_handler,
                                          args=(client_socket),
                                                client_thread.start()
-def run_command(command):
+        def execute_command(int command):
 
     #trim the new line
     command = command.rstrip()
@@ -157,4 +157,4 @@ def run_command(command):
 
     #Send the output back to the client
     return output
-main()
+
