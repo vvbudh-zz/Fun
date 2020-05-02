@@ -14,6 +14,7 @@ son = 0
 n = 1
 p = 0
 progress = list()
+numberarray = list()
 goal = 100
 #while will run until goal is satisfied
 while flag == False:
@@ -25,6 +26,7 @@ while flag == False:
         if p<1:
             p=1
         p=p*progress[n-1]
+        j+=1
     numberarray = [int(x) for x in str(p)]
     #add numbers from factorial product
     nalength = len(numberarray) 
