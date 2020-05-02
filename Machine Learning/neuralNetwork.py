@@ -9,12 +9,15 @@ class NeuralNetwork():
         self.synapticWeights = 2 * np.random.random((3,1)) -1
 
     def sigmoid(self, x):
+        print("Running the sigmoid now.")
         return 1/ (1 + np.exp(-x))
 
     def sigmoidDerivative(self, x):
+        print("Running the derivative of the sigmoid now.")
         return x * (1 - x)
 
     def train(self, trainingInputs, trainingOutputs, trainingIterations):
+        print("This is the train function")
         for iteration in range (trainingIterations):
             output = self.think(trainingInputs)
             error = trainingOutputs - output
@@ -24,6 +27,7 @@ class NeuralNetwork():
     def think(self, inputs):
         inputs = inputs.astype(float)
         output = self.sigmoid(np.dot(inputs, self.synapticWeights))
+        print("This is the think function")
         return output
 
 if __name__ == "__main__":
@@ -48,12 +52,12 @@ if __name__ == "__main__":
 #to know are correct.
 trainingInputs = np.array([[0,0,1],
                             [1,1,1],
-                            [1,0,1],
+                            [0,0,1],
                             [0,1,1]])
     #There are four outputs below because there are four variables here for it to test.
-trainingOutputs = np.array([[0,1,1,0]]).T
+trainingOutputs = np.array([[0,1,0,0]]).T
 
-neuralNetwork.train(trainingInputs, trainingOutputs, 200000)
+neuralNetwork.train(trainingInputs, trainingOutputs, 5)
 print("Synaptic Weights After Training")
 print(neuralNetwork.synapticWeights)
 A = str(input("input 1 "))
