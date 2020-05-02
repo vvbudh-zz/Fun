@@ -15,7 +15,7 @@ n = 1
 p = 0
 progress = list()
 numberarray = list()
-goal = 100
+goal = 10
 #while will run until goal is satisfied
 while flag == False:
     #print(n,"!")
