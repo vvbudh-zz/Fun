@@ -11,16 +11,23 @@ import math
 
 flag = False
 son = 0
-n = 0
+n = 1
 p = 0
 progress = list()
 goal = 100
 #while will run until goal is satisfied
 while flag == False:
+    print(n,"!")
     progress.append(n)
+    temp = 0
+    j=0
+    while j < len(progress):
+        if p<1:
+            p=1
+        p=p*progress[n]
     numberarray = [int(x) for x in str(p)]
     #add numbers from factorial product
-    nalength = len(numberarray) -1
+    nalength = len(numberarray) 
     i=0
     while i<nalength:
         son = son + numberarray[i]
