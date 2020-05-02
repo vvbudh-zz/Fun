@@ -15,7 +15,7 @@ n = 1
 p = 0
 progress = list()
 numberarray = list()
-goal = 5
+goal = 3
 #while will run until goal is satisfied
 while flag == False:
     #print(n,"!")
@@ -36,7 +36,7 @@ while flag == False:
         #print(n,"!")
     #if sum == goal yay!
     if son == goal:
-        print("the factorial thats sum eqauls 100 is", n)
+        print("the factorial thats sum eqauls",goal,"is", n)
         flag = True
     print(n,"! = ",p," ",son)
     n+=1
