@@ -14,7 +14,6 @@ son = 0
 n = 0
 p = 0
 progress = list()
-type(progress)
 goal = 100
 #while will run until goal is satisfied
 while flag == False:
