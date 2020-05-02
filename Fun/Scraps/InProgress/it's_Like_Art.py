@@ -24,7 +24,7 @@ while flag == False:
     while j < len(progress):
         if p<1:
             p=1
-        p=p*progress[n]
+        p=p*progress[n-1]
     numberarray = [int(x) for x in str(p)]
     #add numbers from factorial product
     nalength = len(numberarray) 
