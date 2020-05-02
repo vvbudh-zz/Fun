@@ -15,27 +15,28 @@ n = 1
 p = 0
 progress = list()
 numberarray = list()
-goal = 100
+goal = 5
 #while will run until goal is satisfied
 while flag == False:
-    print(n,"!")
+    #print(n,"!")
     progress.append(n)
-    temp = 0
     j=0
-    while j < len(progress):
-        if p<1:
-            p=1
+    p=1
+    while j < len(progress):            
         p=p*progress[n-1]
         j+=1
     numberarray = [int(x) for x in str(p)]
     #add numbers from factorial product
-    nalength = len(numberarray) 
     i=0
-    while i<nalength:
+    son=0
+    while i<len(numberarray):
         son = son + numberarray[i]
         i+=1
+        #print(son)
+        #print(n,"!")
     #if sum == goal yay!
     if son == goal:
         print("the factorial thats sum eqauls 100 is", n)
         flag = True
+    print(n,"! = ",p," ",son)
     n+=1
