@@ -20,9 +20,10 @@ while flag == False:
     progress.append(n)
     numberarray = [int(x) for x in str(p)]
     #add numbers from factorial product
-    nalength = (len(numberarray-1)
-    for i in range (0,nalength):
-        son+=numberarray[i]
+    nalength = len(numberarray-1)
+    i=0
+    while i<nalength:
+        son = son + numberarray[i]
         i+=1
     #if sum == goal yay!
     if son == goal:
