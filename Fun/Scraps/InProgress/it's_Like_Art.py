@@ -5,8 +5,12 @@ import random as r
 
 
 
-if (reverse[::-1]) == multiplied:
-    print("We found one. ", multiplied)
+inverse = 100
+multiplied = 001
 
+
+if (inverse) == multiplied:
+    print("We found one. ", multiplied)
+    incriment = -1
 
 
