@@ -6,6 +6,7 @@
 #Find the largest palindrome made from the product of two 3-digit numbers.
 
 import random as r
+import math
 
 
 
@@ -19,6 +20,7 @@ def palindromeLoop():
     p1 = 0
     p2 = 0
     incriment = 0
+    
     while incriment != -1:
         '''While we are looking for a number that's a palindrome, 
         keep looking, if we find it, stop.'''
@@ -39,14 +41,18 @@ def palindromeLoop():
         #print(multiplied)
         #Convert it to a string
         strMultiplied = str(multiplied)
+        
+        # add to list of palindromes
+
+        # search list for highest value
 
         #idk why but [::-1] makes it go backwards. This will start at the end and
         # count backwards until you get to position 0
         #make the inverse/reverse.
         inverse = (strMultiplied[::-1])
-        print(inverse)
+        #print(inverse)
         #print("Here's the if statement.")
-        if (inverse) == multiplied:
+        if (inverse) == strMultiplied:
             print("We found one. ", multiplied)
             incriment = -1
 
