@@ -81,4 +81,8 @@ while noruwtp != 0:
     last2spells[0] = currentspell
     print(currentspell[3])
     # now we need ti get the inpu from the keyboard and limit it to 5 key presses and match the imput to the current spell formula plus invoke key and cast key
+    # after that add different game modes(most speels in time limit, mosst speels before fuck up, speel combos, an infinite mode where wrong input losses more health than gain from correct input)
+    # then keep track of stats
+    # then add save and load stats and key bindings
+    # then add *GUI*??
     #noruwtp-=1
